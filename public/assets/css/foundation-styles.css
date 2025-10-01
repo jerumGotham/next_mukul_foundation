@@ -1,0 +1,51 @@
+/* 
+ * External CSS file example
+ * This file can be loaded using Next.js link tag or imported
+ * Place your existing CSS files here
+ */
+
+/* Custom foundation-specific styles */
+.foundation-header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #581c87 100%);
+  color: white;
+  padding: 2rem 0;
+}
+
+.impact-counter {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #059669;
+  text-align: center;
+}
+
+.testimonial-card {
+  background: #f8fafc;
+  border-left: 4px solid #3b82f6;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.donation-progress {
+  height: 20px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.donation-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+  transition: width 0.5s ease;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .foundation-header {
+    padding: 1rem 0;
+  }
+
+  .impact-counter {
+    font-size: 2rem;
+  }
+}

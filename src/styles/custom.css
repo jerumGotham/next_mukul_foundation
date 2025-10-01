@@ -1,0 +1,47 @@
+/* 
+ * Custom Styles for Mukul Foundation
+ * Place your custom CSS here that you want to import from existing projects
+ * 
+ * This file can be imported in components or pages using:
+ * import '@/styles/custom.css';
+ */
+
+/* Example custom styles */
+.custom-button {
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.custom-button:hover {
+  transform: translateY(-2px);
+}
+
+.custom-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+ * You can also import external CSS files here:
+ * @import url('path-to-your-external-css-file.css');
+ */
