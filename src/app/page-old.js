@@ -96,7 +96,7 @@ export default function Home() {
                       <Link href="/mission">Children Support</Link>
                     </h4>
                     <p className="text-gray-200 mb-4">
-                      Supporting children's education and welfare
+                      Supporting children&apos;s education and welfare
                     </p>
                     <Link
                       href="/mission"

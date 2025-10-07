@@ -2,6 +2,12 @@
 const nextConfig = {
   // Enable static file serving from public directory
   assetPrefix: "",
+  ...(process.env.NODE_ENV === "development" && {
+    webpack: (config) => {
+      config.cache = false;
+      return config;
+    },
+  }),
 
   // Configure webpack for custom assets
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {

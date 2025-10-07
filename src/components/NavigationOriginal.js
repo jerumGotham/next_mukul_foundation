@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -119,7 +120,7 @@ export default function Navigation() {
         <div className="offset-sidebar">
           <div className="offset-widget offset-logo mb-30">
             <Link href="/">
-              <img src="/assets/img/logo/header_logo_one.png" alt="logo" />
+              <Image src="/assets/img/logo/header_logo_one.png" alt="logo" />
             </Link>
           </div>
           <div className="offset-widget mb-40">

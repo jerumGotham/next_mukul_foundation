@@ -94,7 +94,7 @@ export default function Navigation() {
               >
                 <div className="logo-container d-flex gap-5">
                   <div className="d-inline-block font-weight-bold text-[#b7860f]">
-                    MUKUL KUMAR MEMORAL FOUNDATION
+                    MUKUL KUMAR MEMORIAL FOUNDATION
                   </div>
                 </div>
               </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-export default function AboutArea() {
+export default function AboutArea2() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -29,45 +29,50 @@ export default function AboutArea() {
   }
 
   return (
-    <section
-      className="about-area grey-bg2 pos-rel pb-100"
-      suppressHydrationWarning={true}
-    >
-      <div className="right-shape">
-        <Image
-          src="/assets/img/shape/01.png"
-          alt="Shape decoration"
-          width={300}
-          height={300}
-        />
-      </div>
+    <section className="about-area-03 pos-rel pt-100 pb-180">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-xl-6 col-lg-6 col-md-12">
-            <div className="about-img mb-60 pos-rel">
+            <div className="about-img-02 about-img-03 mb-40 mr-70 pos-rel">
               <div
-                className="about-img__thumb pr-45 wow fadeInUp2 animated"
+                className="about-img-03__thumb wow fadeInUp2 animated"
                 data-wow-delay=".1s"
               >
                 <Image
                   src="/assets/img/about/about.jpg"
-                  alt="About Us"
-                  width={500}
-                  height={600}
-                  className="w-100"
+                  alt="About"
+                  width={100}
+                  height={100}
+                  style={{ borderRadius: "50%" }}
                 />
               </div>
               <div
-                className="experience-box heding-bg wow fadeInUp2 animated"
-                data-wow-delay=".3s"
+                className="about-img-03__thumb-03 wow fadeInUp2 animated"
+                data-wow-delay=".2s"
               >
-                <h1>25</h1>
-                <h4 className="semi-02-title">Years Experience</h4>
+                <Image
+                  src="/assets/img/added/4.jpg"
+                  alt="About"
+                  width={300}
+                  height={300}
+                  style={{ borderRadius: "20%" }}
+                />
+              </div>
+              <div
+                className="experience-box wow fadeInUp2 animated"
+                data-wow-delay=".4s"
+              >
+                <h1 className="f-left">25</h1>
+                <h4 className="semi-02-title">
+                  Years
+                  <br />
+                  Experience
+                </h4>
               </div>
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-12">
-            <div className="about-wrapper mb-30">
+            <div className="about-wrapper mb-40">
               <div
                 className="section-title text-left mb-20 wow fadeInUp2 animated"
                 data-wow-delay=".1s"
@@ -76,7 +81,7 @@ export default function AboutArea() {
                   <span>
                     <i className="fas fa-heart"></i>
                   </span>{" "}
-                  About US
+                  About EnaCare
                 </h6>
                 <h2>Challenge 264 Million Children Go to Schools</h2>
               </div>
@@ -105,7 +110,7 @@ export default function AboutArea() {
                   their families.
                 </li>
               </ul>
-              <Link className="theme_btn theme_btn_bg" href="">
+              <Link className="theme_btn theme_btn_bg" href="/about">
                 Learn more{" "}
                 <span>
                   <i className="fas fa-heart"></i>

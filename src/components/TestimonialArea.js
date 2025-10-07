@@ -84,7 +84,7 @@ export default function TestimonialArea() {
                         </div>
                       </div>
                       <div className="testimonial-text">
-                        <p>"{testimonial.quote}"</p>
+                        <p>&quot;{testimonial.quote}&quot;</p>
                         <h4>{testimonial.name}</h4>
                         <span>{testimonial.role}</span>
                       </div>

@@ -128,7 +128,7 @@ export default function HeroSlider() {
                       Raising Your Helping Hands
                     </h5>
                     <h1 className="main-title mb-35">
-                      Mukul's name, a lasting flame
+                      Mukul&apos;s name, a lasting flame
                     </h1>
                   </div>
                 </div>
@@ -167,7 +167,7 @@ export default function HeroSlider() {
                     data-animation="fadeInUp2"
                     data-delay=".1s"
                   >
-                    Mukul's name, a lasting flame
+                    Mukul&apos;s name, a lasting flame
                   </h1>
                   <ul
                     className="btn-list"
@@ -224,7 +224,7 @@ export default function HeroSlider() {
                     data-animation="fadeInUp2"
                     data-delay=".2s"
                   >
-                    Mukul's name, a lasting flame
+                    Mukul&apos;s name, a lasting flame
                   </h1>
                   <ul
                     className="btn-list"
@@ -281,7 +281,7 @@ export default function HeroSlider() {
                     data-animation="fadeInUp2"
                     data-delay=".2s"
                   >
-                    Mukul's name, a lasting flame
+                    Mukul&apos;s name, a lasting flame
                   </h1>
                   <ul
                     className="btn-list"

@@ -24,9 +24,9 @@ export default function ServicesArea() {
                   <ul className="services__content heding-bg pos-abl">
                     <li>
                       <h4 className="semi-02-title">
-                        <Link href="">Charity For Food</Link>
+                        <Link href="">Scholarship</Link>
                       </h4>
-                      <p>Giving money to food</p>
+                      <p>Providing financial assistance for education</p>
                     </li>
                     <li>
                       <Link className="more_btn" href="">
@@ -45,7 +45,7 @@ export default function ServicesArea() {
 
   return (
     <section
-      className="services-area grey-bg2 pb-130"
+      className="services-area grey-bg2 pb-20"
       suppressHydrationWarning={true}
     >
       <div className="container custom-container-02">
@@ -58,8 +58,8 @@ export default function ServicesArea() {
               <div className="services pos-rel mb-30">
                 <div className="services__img">
                   <Image
-                    src="/assets/img/services/01.jpg"
-                    alt="Charity For Food"
+                    src="/assets/img/services/scholar.jpg"
+                    alt="Scholarship"
                     width={350}
                     height={250}
                     className="w-100"
@@ -68,9 +68,9 @@ export default function ServicesArea() {
                 <ul className="services__content heding-bg pos-abl">
                   <li>
                     <h4 className="semi-02-title">
-                      <Link href="">Charity For Food</Link>
+                      <Link href="">Scholarship</Link>
                     </h4>
-                    <p>Giving money to food</p>
+                    <p>Financial Assistance</p>
                   </li>
                   <li>
                     <Link className="more_btn" href="">
@@ -87,19 +87,19 @@ export default function ServicesArea() {
               <div className="services pos-rel mb-30">
                 <div className="services__img">
                   <Image
-                    src="/assets/img/services/02.jpg"
-                    alt="Children Support"
+                    src="/assets/img/services/student.jpg"
+                    alt="Student Support"
                     width={350}
-                    height={250}
+                    height={50}
                     className="w-100"
                   />
                 </div>
                 <ul className="services__content heding-bg pos-abl">
                   <li>
                     <h4 className="semi-02-title">
-                      <Link href="">Children Support</Link>
+                      <Link href="">Student Support</Link>
                     </h4>
-                    <p>Giving money to food</p>
+                    <p>Academic assistance</p>
                   </li>
                   <li>
                     <Link className="more_btn" href="">
@@ -116,8 +116,8 @@ export default function ServicesArea() {
               <div className="services pos-rel mb-30">
                 <div className="services__img">
                   <Image
-                    src="/assets/img/services/03.jpg"
-                    alt="Refuge Shelter"
+                    src="/assets/img/services/remembrance.jpg"
+                    alt="Mukul Remembrance"
                     width={350}
                     height={250}
                     className="w-100"
@@ -126,9 +126,9 @@ export default function ServicesArea() {
                 <ul className="services__content heding-bg pos-abl">
                   <li>
                     <h4 className="semi-02-title">
-                      <Link href="">Refuge Shelter</Link>
+                      <Link href="">Mukul Remembrance</Link>
                     </h4>
-                    <p>Giving money to food</p>
+                    <p>Honoring the legacy</p>
                   </li>
                   <li>
                     <Link className="more_btn" href="">
