@@ -5,12 +5,27 @@ import { useState, useEffect, useRef } from "react";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
   const [mounted, setMounted] = useState(false);
   const slideBarRef = useRef(null);
   const overlayRef = useRef(null);
 
   useEffect(() => {
     setMounted(true);
+
+    // Sticky menu on scroll
+    const handleScroll = () => {
+      const scroll = window.scrollY;
+      if (scroll < 200) {
+        setIsSticky(false);
+      } else {
+        setIsSticky(true);
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
 
     // Prevent jQuery from interfering with our React components
     const preventJQueryInterference = () => {
@@ -30,6 +45,7 @@ export default function Navigation() {
     return () => {
       if (typeof window !== "undefined") {
         document.body.style.overflow = "unset";
+        window.removeEventListener("scroll", handleScroll);
       }
     };
   }, []);
@@ -51,12 +67,59 @@ export default function Navigation() {
 
   const handleMenuClose = () => {
     setIsMenuOpen(false);
+    setIsSubmenuOpen(false);
+  };
+
+  const handleSubmenuToggle = (e) => {
+    e.preventDefault();
+    setIsSubmenuOpen(!isSubmenuOpen);
   };
 
   if (!mounted) {
     return (
       <header id="top-menu">
-        <div className="main-header-area">
+        <div className="header-top-area pos-rel pt-10 pb-15 d-none d-lg-block">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-xl-6 offset-xl-2 col-lg-7 text-right">
+                <div className="top-cta">
+                  <span>
+                    Welcome To NovoCare. Most Popular Charity Foundation Web
+                    Site
+                  </span>
+                </div>
+              </div>
+              <div className="col-xl-4 col-lg-5 text-right">
+                <div className="top-right-nav">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fab fa-youtube"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fab fa-vimeo-square"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={`main-header-area ${isSticky ? "sticky" : ""}`}>
           <div className="container">
             <div className="row align-items-center justify-content-between">
               <div
@@ -82,11 +145,53 @@ export default function Navigation() {
   return (
     <>
       <header id="top-menu" suppressHydrationWarning={true}>
-        <div className="main-header-area">
+        <div className="header-top-area pos-rel pt-10 pb-15 d-none d-lg-block">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-xl-6 offset-xl-2 col-lg-7 text-right">
+                <div className="top-cta">
+                  <p>
+                    Welcome To &nbsp;
+                    <span className="text-[#b7860f] font-weight-bold">
+                      MUKUL KUMAR MEMORIAL FOUNDATION
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div className="col-xl-4 col-lg-5 text-right">
+                <div className="top-right-nav">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fab fa-youtube"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fab fa-vimeo-square"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={`main-header-area ${isSticky ? "sticky" : ""}`}>
           <div className="container">
             <div className="row align-items-center justify-content-between">
               <div
-                className="col-xl-4 col-lg-4 col-md-6 col-6 d-flex"
+                className="col-xl-5 col-lg-5 col-md-6 col-6 d-flex"
                 style={{
                   maxWidth: "clamp(922px, 90.38vw, 1720px)",
                   width: "100%",
@@ -94,12 +199,12 @@ export default function Navigation() {
               >
                 <div className="logo-container d-flex gap-5">
                   <div className="d-inline-block font-weight-bold text-[#b7860f]">
-                    MUKUL KUMAR MEMORIAL FOUNDATION
+                    MUKUL KUMAR
                   </div>
                 </div>
               </div>
 
-              <div className="col-xl-5 col-lg-5 d-none d-lg-block text-lg-center text-xl-right">
+              <div className="col-xl-4 col-lg-4 d-none d-lg-block text-lg-center text-xl-right">
                 <div className="main-menu d-none d-lg-block">
                   <nav>
                     <ul>
@@ -187,19 +292,55 @@ export default function Navigation() {
             <div className="offset-widget offset-logo mb-30">
               <Link href="/">MUKUL KAMAR FOUNDATION</Link>
             </div>
+
+            {/* Mobile Navigation Menu */}
             <div className="offset-widget mb-40">
-              <div className="info-widget">
-                <h4 className="offset-title mb-20">About Us</h4>
-                <p className="mb-30">
-                  The Mukul Kumar Memorial Foundation is dedicated to creating
-                  positive change and empowering communities through education,
-                  healthcare, and sustainable development initiatives.
-                </p>
-                <Link className="theme_btn theme_btn_bg" href="/contact">
-                  Contact Us
-                </Link>
+              <div className="mobile-menu">
+                <nav>
+                  <ul>
+                    <li>
+                      <Link
+                        className="active"
+                        href="/"
+                        onClick={handleMenuClose}
+                      >
+                        Home
+                      </Link>
+                    </li>
+                    <li
+                      className={`has-dropdown ${
+                        isSubmenuOpen ? "submenu-open" : ""
+                      }`}
+                    >
+                      <Link href="#" onClick={handleSubmenuToggle}>
+                        About Us <i className="far fa-chevron-down"></i>
+                      </Link>
+                      <ul
+                        className="submenu"
+                        style={{ display: isSubmenuOpen ? "block" : "none" }}
+                      >
+                        <li>
+                          <Link href="/case-study-1" onClick={handleMenuClose}>
+                            Mission
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/case-study-2" onClick={handleMenuClose}>
+                            Vision
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <Link href="/contact" onClick={handleMenuClose}>
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
+
             <div className="offset-widget mb-30 pr-10">
               <div className="info-widget info-widget2">
                 <h4 className="offset-title mb-20">Contact Info</h4>
@@ -231,6 +372,38 @@ export default function Navigation() {
         ></div>
       )}
       {/* slide-bar end */}
+
+      {/* Mobile Menu Styles */}
+      <style jsx>{`
+        .mobile-menu nav ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        .mobile-menu nav ul li {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .mobile-menu nav ul li a {
+          display: block;
+          padding: 15px 0;
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: 500;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        }
+
+        .mobile-menu nav ul li a i {
+          float: right;
+          transition: transform 0.3s ease;
+        }
+
+        .mobile-menu nav ul li.submenu-open > a i {
+          transform: rotate(180deg);
+        }
+      `}</style>
     </>
   );
 }

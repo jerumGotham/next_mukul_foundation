@@ -58,7 +58,7 @@ export default function ServicesArea() {
               <div className="services pos-rel mb-30">
                 <div className="services__img">
                   <Image
-                    src="/assets/img/services/scholar.jpg"
+                    src="/assets/img/added/7.jpg"
                     alt="Scholarship"
                     width={350}
                     height={250}
@@ -87,7 +87,7 @@ export default function ServicesArea() {
               <div className="services pos-rel mb-30">
                 <div className="services__img">
                   <Image
-                    src="/assets/img/services/student.jpg"
+                    src="/assets/img/added/8.jpg"
                     alt="Student Support"
                     width={350}
                     height={50}
@@ -116,7 +116,7 @@ export default function ServicesArea() {
               <div className="services pos-rel mb-30">
                 <div className="services__img">
                   <Image
-                    src="/assets/img/services/remembrance.jpg"
+                    src="/assets/img/added/6.jpg"
                     alt="Mukul Remembrance"
                     width={350}
                     height={250}

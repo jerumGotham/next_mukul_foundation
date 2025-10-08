@@ -28,7 +28,10 @@ export default function CTAArea() {
   }
 
   return (
-    <section className="donation-area-03 grey-bg2 pos-rel pt-100 pb-75">
+    <section
+      className="about-area-03 pos-rel pt-100 pb-75"
+      suppressHydrationWarning={true}
+    >
       <div className="container">
         <div className="row align-items-center">
           <div className="col-xl-7 col-lg-6 col-md-6">

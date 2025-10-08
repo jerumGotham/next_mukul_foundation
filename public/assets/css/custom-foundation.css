@@ -433,14 +433,14 @@ ages */
 }
 
 /* Navigation Styles */
-.main-header-area {
+/* .main-header-area {
   background: white;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
-}
+} */
 
 .main-menu ul {
   list-style: none;
@@ -538,10 +538,6 @@ ages */
 .close-mobile-menu a {
   color: #333;
   font-size: 24px;
-}
-
-.offset-sidebar {
-  padding: 0 30px 30px;
 }
 
 .offset-widget {

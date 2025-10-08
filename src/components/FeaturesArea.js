@@ -21,16 +21,16 @@ export default function FeaturesArea() {
     },
     {
       icon: "flaticon-blood-donation",
-      title: "Healthcare Support",
+      title: "Healthcare ",
       description:
-        "Offering medical assistance, health camps, and access to essential healthcare services for underserved populations.",
+        "Offering medical assistance and access to essential services for underserved populations.",
       link: "/about",
       delay: ".3s",
       active: false,
     },
     {
       icon: "flaticon-donation",
-      title: "Clean Water Access",
+      title: "Clean Water",
       description:
         "Ensuring access to safe drinking water and sanitation facilities in rural and remote areas.",
       link: "/about",
@@ -39,9 +39,9 @@ export default function FeaturesArea() {
     },
     {
       icon: "flaticon-scholarship",
-      title: "Education Programs",
+      title: "Education",
       description:
-        "Empowering children and youth through quality education, scholarships, and skill development initiatives.",
+        "Empowering children and youth through quality education, and skill development initiatives.",
       link: "/about",
       delay: ".7s",
       active: false,
@@ -75,7 +75,10 @@ export default function FeaturesArea() {
   }
 
   return (
-    <section className="feature-area pt-130 pb-100">
+    <section
+      className="feature-area pt-130 pb-100"
+      suppressHydrationWarning={true}
+    >
       <div className="container">
         <div className="row">
           {features.map((feature, index) => (

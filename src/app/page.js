@@ -7,6 +7,8 @@ import CTAArea from "@/components/CTAArea";
 import FeaturesArea from "@/components/FeaturesArea";
 import AboutArea2 from "@/components/AboutArea2";
 import EventsArea from "@/components/EventsArea";
+import Volunteer from "@/components/Volunteer";
+import Brand from "@/components/Brand";
 
 export const metadata = {
   title: "Mukul Kumar Memorial Foundation",
@@ -21,7 +23,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main style={{ marginTop: "80px" }} suppressHydrationWarning={true}>
+    <main suppressHydrationWarning={true}>
       {/* Hero Slider */}
       <HeroSlider />
 
@@ -34,6 +36,7 @@ export default function Home() {
       {/* Features Area */}
       <FeaturesArea />
 
+      {/* Events Area */}
       <EventsArea />
 
       {/* CTA Area */}
@@ -43,7 +46,13 @@ export default function Home() {
       <CounterArea />
 
       {/* Testimonial Area */}
-      {/* <TestimonialArea /> */}
+      <TestimonialArea />
+
+      {/* Volunteer Area */}
+      <Volunteer />
+
+      {/* Brand Area */}
+      <Brand />
     </main>
   );
 }

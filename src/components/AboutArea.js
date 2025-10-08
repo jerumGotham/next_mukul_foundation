@@ -50,7 +50,7 @@ export default function AboutArea() {
                 data-wow-delay=".1s"
               >
                 <Image
-                  src="/assets/img/about/about.jpg"
+                  src="/assets/img/added/9.jpg"
                   alt="About Us"
                   width={500}
                   height={600}

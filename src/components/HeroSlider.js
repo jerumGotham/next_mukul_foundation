@@ -63,7 +63,7 @@ export default function HeroSlider() {
           try {
             BasicSlider.slick({
               autoplay: true,
-              autoplaySpeed: 2000,
+              autoplaySpeed: 3000,
               dots: false,
               fade: true,
               speed: 1000,
@@ -146,7 +146,7 @@ export default function HeroSlider() {
         {/* Slide 1 */}
         <div
           className="single-slider slider-height pos-rel d-flex align-items-center"
-          style={{ backgroundImage: "url(assets/img/slider/t1.jpg)" }}
+          style={{ backgroundImage: "url(assets/img/added/2.jpg)" }}
         >
           <div className="container">
             <div className="row">
@@ -260,7 +260,7 @@ export default function HeroSlider() {
         {/* Slide 3 */}
         <div
           className="single-slider slider-height pos-rel d-flex align-items-center"
-          style={{ backgroundImage: "url(assets/img/slider/t2.jpg)" }}
+          style={{ backgroundImage: "url(assets/img/added/9.jpg)" }}
         >
           <div className="container">
             <div className="row">

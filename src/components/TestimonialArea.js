@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function TestimonialArea() {
@@ -8,107 +9,304 @@ export default function TestimonialArea() {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      role: "Community Leader",
-      image: "/assets/img/testimonial/testimonial1.jpg",
+      name: "David Warner",
+      role: "Senior Web Developer",
+      image: "/assets/img/testimonial/04.png",
       quote:
-        "The Mukul Kumar Memorial Foundation has transformed our community. Their education programs have given our children hope and a brighter future. The dedication and transparency of their team is truly remarkable.",
+        "Make Honest Design Work For Digital Business With Ethical Design Handbook Building Commerce Site With October CMS And Shopaholic",
     },
     {
       id: 2,
-      name: "Michael Chen",
-      role: "Healthcare Worker",
-      image: "/assets/img/testimonial/testimonial2.jpg",
+      name: "David Luis",
+      role: "Senior Web Developer",
+      image: "/assets/img/testimonial/05.png",
       quote:
-        "Working with this foundation has been incredibly rewarding. Their healthcare initiatives have reached so many families in need, providing essential medical care and health education that saves lives every day.",
+        "Make Honest Design Work For Digital Business With Ethical Design Handbook Building Commerce Site With October CMS And Shopaholic",
     },
     {
       id: 3,
-      name: "Dr. Priya Patel",
-      role: "Education Advocate",
-      image: "/assets/img/testimonial/testimonial3.jpg",
+      name: "David Warner",
+      role: "Senior Web Developer",
+      image: "/assets/img/testimonial/04.png",
       quote:
-        "What sets this foundation apart is their commitment to sustainable change. They don't just provide temporary solutions - they empower communities to build better futures for themselves.",
+        "Make Honest Design Work For Digital Business With Ethical Design Handbook Building Commerce Site With October CMS And Shopaholic",
+    },
+    {
+      id: 4,
+      name: "David Luis",
+      role: "Senior Web Developer",
+      image: "/assets/img/testimonial/05.png",
+      quote:
+        "Make Honest Design Work For Digital Business With Ethical Design Handbook Building Commerce Site With October CMS And Shopaholic",
     },
   ];
+
+  // Group testimonials into slides (2 per slide)
+  const slides = [];
+  for (let i = 0; i < testimonials.length; i += 2) {
+    slides.push(testimonials.slice(i, i + 2));
+  }
 
   useEffect(() => {
     setMounted(true);
 
+    // Auto-advance slides
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 7000); // Change slide every 7 seconds
 
     return () => clearInterval(timer);
-  }, [testimonials.length]);
+  }, [slides.length]);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const goToSlide = (index) => {
+    setCurrentSlide(index);
+  };
 
   if (!mounted) {
-    return <div className="testimonial-area"></div>;
+    return (
+      <section className="testimonial-area-02 testimonila-area-03 pt-130 pb-180"></section>
+    );
   }
 
   return (
-    <div className="testimonial-area gray-bg pt-150 pb-150">
+    <section
+      className="testimonial-area-02 testimonila-area-03 "
+      suppressHydrationWarning={true}
+    >
       <div className="container">
         <div className="row">
-          <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-            <div className="section-title text-center mb-75">
-              <div className="section-title-icon">
-                <i className="flaticon-quote"></i>
-              </div>
-              <h1>What People Say</h1>
-              <p>
-                Hear from the communities we serve and the partners who work
-                with us to create lasting change around the world.
-              </p>
+          <div className="col-xl-8 offset-xl-2">
+            <div
+              className="section-title text-center mb-90 pl-50 pr-50 wow fadeInUp2 animated"
+              data-wow-delay=".1s"
+            >
+              <h6>
+                <span>
+                  <i className="fas fa-heart"></i>
+                </span>{" "}
+                Clients Feedback
+              </h6>
+              <h2>
+                What Our Clients Say About
+                <br />
+                Our Volunteers
+              </h2>
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-            <div className="testimonial-wrapper">
-              <div className="testimonial-slider">
-                {testimonials.map((testimonial, index) => (
+        <div className="testimonial-wrapper-03 position-relative">
+          <div
+            className="testimonial-slider-wrapper"
+            style={{ overflow: "hidden" }}
+          >
+            <div
+              className="testimonial-slides"
+              style={{
+                display: "flex",
+                transform: `translateX(-${currentSlide * 100}%)`,
+                transition: "transform 0.5s ease-in-out",
+              }}
+            >
+              {slides.map((slide, slideIndex) => (
+                <div
+                  key={slideIndex}
+                  className="testimonial-slide"
+                  style={{ minWidth: "100%", flex: "0 0 100%" }}
+                >
                   <div
-                    key={testimonial.id}
-                    className={`testimonial-item ${
-                      index === currentSlide ? "active" : ""
-                    }`}
+                    className="row testtimonial-item-active testimonial-row-responsive"
+                    style={{
+                      display: "flex",
+                      flexWrap: "nowrap",
+                      gap: "20px",
+                      justifyContent: "space-between",
+                    }}
                   >
-                    <div className="testimonial-content text-center">
-                      <div className="testimonial-img mb-30">
-                        <div className="testimonial-avatar">
-                          {testimonial.name
-                            .split(" ")
-                            .map((n) => n[0])
-                            .join("")}
+                    {slide.map((testimonial, idx) => (
+                      <div
+                        key={testimonial.id}
+                        className="col-xl-6 col-lg-6 col-md-6 col-sm-12 testimonial-item-02 wow fadeInUp2 animated"
+                        data-wow-delay=".3s"
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          flex: "1",
+                          minWidth: "0",
+                        }}
+                      >
+                        <div className="testimonial-item__content w-100">
+                          <h3>{testimonial.quote}</h3>
+                          <div className="author_box d-flex">
+                            <div className="author_box__img mr-25">
+                              <Image
+                                src={testimonial.image}
+                                alt={testimonial.name}
+                                width={80}
+                                height={80}
+                              />
+                            </div>
+                            <div className="author_box__content">
+                              <h4 className="semi-02-title">
+                                {testimonial.name}
+                              </h4>
+                              <p>{testimonial.role}</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div className="testimonial-text">
-                        <p>&quot;{testimonial.quote}&quot;</p>
-                        <h4>{testimonial.name}</h4>
-                        <span>{testimonial.role}</span>
-                      </div>
-                    </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-
-              {/* Navigation dots */}
-              <div className="testimonial-nav">
-                {testimonials.map((_, index) => (
-                  <button
-                    key={index}
-                    className={`nav-dot ${
-                      index === currentSlide ? "active" : ""
-                    }`}
-                    onClick={() => setCurrentSlide(index)}
-                  />
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
+          </div>
+
+          {/* Navigation Arrows */}
+          <button
+            onClick={nextSlide}
+            className="testimonial-arrow testimonial-arrow-prev"
+            style={{
+              position: "absolute",
+              left: "-50px",
+              top: "50%",
+              transform: "translateY(-50%)",
+              background: "#b7860f",
+              border: "none",
+              borderRadius: "50%",
+              width: "50px",
+              height: "50px",
+              color: "white",
+              fontSize: "20px",
+              cursor: "pointer",
+              zIndex: 10,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              transition: "all 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = "#b7860f";
+              e.currentTarget.style.transform = "translateY(-50%) scale(1.1)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = "#b7860f";
+              e.currentTarget.style.transform = "translateY(-50%) scale(1)";
+            }}
+          >
+            <i className="fas fa-chevron-left"></i>
+          </button>
+          <button
+            onClick={nextSlide}
+            className="testimonial-arrow testimonial-arrow-next"
+            style={{
+              position: "absolute",
+              right: "-50px",
+              top: "50%",
+              transform: "translateY(-50%)",
+              background: "#b7860f",
+              border: "none",
+              borderRadius: "50%",
+              width: "50px",
+              height: "50px",
+              color: "white",
+              fontSize: "20px",
+              cursor: "pointer",
+              zIndex: 10,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              transition: "all 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = "#b7860f";
+              e.currentTarget.style.transform = "translateY(-50%) scale(1.1)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = "#b7860f";
+              e.currentTarget.style.transform = "translateY(-50%) scale(1)";
+            }}
+          >
+            <i className="fas fa-chevron-right"></i>
+          </button>
+
+          {/* Dots Navigation */}
+          <div
+            className="testimonial-dots"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: "10px",
+              marginTop: "40px",
+            }}
+          >
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                style={{
+                  width: "12px",
+                  height: "12px",
+                  borderRadius: "50%",
+                  border: "none",
+                  background: index === currentSlide ? "#b7860f" : "#ddd",
+                  cursor: "pointer",
+                  transition: "all 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  if (index !== currentSlide) {
+                    e.currentTarget.style.background = "#b7860f";
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (index !== currentSlide) {
+                    e.currentTarget.style.background = "#ddd";
+                  }
+                }}
+              />
+            ))}
           </div>
         </div>
       </div>
-    </div>
+
+      {/* Responsive styles */}
+      <style jsx>{`
+        .testimonial-item-02 {
+          display: flex;
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+
+        .testimonial-item__content {
+          width: 100%;
+        }
+
+        @media (max-width: 1199px) {
+          .testimonial-arrow {
+            display: none !important;
+          }
+        }
+
+        @media (max-width: 767px) {
+          .testimonial-row-responsive {
+            flex-wrap: wrap !important;
+            gap: 20px !important;
+          }
+
+          .testimonial-item-02 {
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+            margin-bottom: 20px;
+          }
+
+          .testimonial-item-02:last-child {
+            margin-bottom: 0;
+          }
+        }
+      `}</style>
+    </section>
   );
 }
