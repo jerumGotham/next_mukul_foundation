@@ -23,7 +23,7 @@ export default function Preloader() {
     >
       <div className="preloader-logo">
         <Image
-          src="/assets/img/added/logo2.png"
+          src="/assets/img/added/logo-removebg-preview.png"
           alt="Logo"
           width={150}
           height={150}

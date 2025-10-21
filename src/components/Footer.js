@@ -53,7 +53,7 @@ export default function Footer() {
                 </h4>
                 <h2
                   style={{
-                    color: "#b7860f",
+                    color: "#7d2805",
                     fontSize: "48px",
                     fontWeight: "700",
                   }}
@@ -83,7 +83,7 @@ export default function Footer() {
                     display: "inline-block",
                     width: "60px",
                     height: "3px",
-                    background: "#b7860f",
+                    background: "#7d2805",
                     marginRight: "15px",
                     verticalAlign: "middle",
                   }}
@@ -194,7 +194,7 @@ export default function Footer() {
                     display: "inline-block",
                     width: "60px",
                     height: "3px",
-                    background: "#b7860f",
+                    background: "#7d2805",
                     marginRight: "15px",
                     verticalAlign: "middle",
                   }}
@@ -216,7 +216,7 @@ export default function Footer() {
                           textDecoration: "none",
                           transition: "color 0.3s ease",
                         }}
-                        onMouseEnter={(e) => (e.target.style.color = "#b7860f")}
+                        onMouseEnter={(e) => (e.target.style.color = "#7d2805")}
                         onMouseLeave={(e) => (e.target.style.color = "#666")}
                       >
                         About Us
@@ -238,7 +238,7 @@ export default function Footer() {
                           textDecoration: "none",
                           transition: "color 0.3s ease",
                         }}
-                        onMouseEnter={(e) => (e.target.style.color = "#b7860f")}
+                        onMouseEnter={(e) => (e.target.style.color = "#7d2805")}
                         onMouseLeave={(e) => (e.target.style.color = "#666")}
                       >
                         Become Volunteer
@@ -265,7 +265,7 @@ export default function Footer() {
             width: "60px",
             height: "60px",
             borderRadius: "50%",
-            background: "#b7860f",
+            background: "#7d2805",
             border: "none",
             color: "white",
             fontSize: "24px",
@@ -324,13 +324,13 @@ export default function Footer() {
               >
                 <p>
                   © 2025{" "}
-                  <span style={{ color: "#b7860f", fontWeight: "600" }}>
+                  <span style={{ color: "#7d2805", fontWeight: "600" }}>
                     Mukul Kumar Memorial Foundation
                   </span>
                   . Made with{" "}
                   <i
                     className="fas fa-heart"
-                    style={{ color: "#b7860f", margin: "0 5px" }}
+                    style={{ color: "#7d2805", margin: "0 5px" }}
                   ></i>
                 </p>
               </div>

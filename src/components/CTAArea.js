@@ -29,7 +29,7 @@ export default function CTAArea() {
 
   return (
     <section
-      className="about-area-03 pos-rel pt-100 pb-75"
+      className="about-area-03 pos-rel pt-20 pb-75"
       suppressHydrationWarning={true}
     >
       <div className="container">
@@ -126,12 +126,6 @@ export default function CTAArea() {
                 className="section-title text-left mb-20 wow fadeInUp2 animated"
                 data-wow-delay=".1s"
               >
-                <h6>
-                  <span>
-                    <i className="fas fa-heart"></i>
-                  </span>{" "}
-                  Get Started With Us
-                </h6>
                 <h2>
                   Ready To Donate
                   <br />

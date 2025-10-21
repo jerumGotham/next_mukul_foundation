@@ -7,7 +7,8 @@ import StructuredData from "@/components/StructuredData";
 import Preloader from "@/components/Preloader";
 import Script from "next/script";
 import ExternalStyles from "@/components/ExternalStyles";
-
+import { Montserrat } from "next/font/google";
+const montserrat = Montserrat({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -99,7 +100,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/assets/css/main.css" />
         <link rel="stylesheet" href="/assets/css/custom-foundation.css" /> */}
       </head>
-      <body className={inter.className} suppressHydrationWarning={true}>
+      <body className={montserrat.className} suppressHydrationWarning={true}>
         <ExternalStyles />
         <StructuredData />
         <Preloader />

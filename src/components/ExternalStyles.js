@@ -10,7 +10,7 @@ export default function ExternalStyles() {
       "/assets/css/owl.carousel.min.css",
       "/assets/css/animate.css",
       "/assets/css/magnific-popup.css",
-      "/assets/css/all.min.css",
+      "/assets/css/all.min.css?v=" + Date.now(),
       "/assets/css/flaticon.css",
       "/assets/css/font.css",
       "/assets/css/themify-icons.css",
@@ -18,6 +18,7 @@ export default function ExternalStyles() {
       "/assets/css/nice-select.css",
       "/assets/css/slick.css",
       "/assets/css/main.css?v=" + Date.now(),
+      "/assets/css/main-dark.css?v=" + Date.now(),
       "/assets/css/custom-foundation.css?v=" + Date.now(),
     ];
 

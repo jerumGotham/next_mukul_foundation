@@ -45,7 +45,7 @@ export default function ServicesArea() {
 
   return (
     <section
-      className="services-area grey-bg2 pb-20"
+      className="services-area grey-bg2 pb-100"
       suppressHydrationWarning={true}
     >
       <div className="container custom-container-02">
@@ -59,7 +59,7 @@ export default function ServicesArea() {
                 <div className="services__img">
                   <Image
                     src="/assets/img/added/7.jpg"
-                    alt="Scholarship"
+                    alt="Apply Now"
                     width={350}
                     height={250}
                     className="w-100"
@@ -68,9 +68,9 @@ export default function ServicesArea() {
                 <ul className="services__content heding-bg pos-abl">
                   <li>
                     <h4 className="semi-02-title">
-                      <Link href="">Scholarship</Link>
+                      <Link href="">Apply Now</Link>
                     </h4>
-                    <p>Financial Assistance</p>
+                    {/* <p>Financial Assistance</p> */}
                   </li>
                   <li>
                     <Link className="more_btn" href="">
@@ -88,7 +88,7 @@ export default function ServicesArea() {
                 <div className="services__img">
                   <Image
                     src="/assets/img/added/8.jpg"
-                    alt="Student Support"
+                    alt="Scholarship Programs"
                     width={350}
                     height={50}
                     className="w-100"
@@ -97,9 +97,9 @@ export default function ServicesArea() {
                 <ul className="services__content heding-bg pos-abl">
                   <li>
                     <h4 className="semi-02-title">
-                      <Link href="">Student Support</Link>
+                      <Link href="">Scholarship Programs</Link>
                     </h4>
-                    <p>Academic assistance</p>
+                    {/* <p>Academic assistance</p> */}
                   </li>
                   <li>
                     <Link className="more_btn" href="">
@@ -117,7 +117,7 @@ export default function ServicesArea() {
                 <div className="services__img">
                   <Image
                     src="/assets/img/added/6.jpg"
-                    alt="Mukul Remembrance"
+                    alt="Get Involved"
                     width={350}
                     height={250}
                     className="w-100"
@@ -126,9 +126,9 @@ export default function ServicesArea() {
                 <ul className="services__content heding-bg pos-abl">
                   <li>
                     <h4 className="semi-02-title">
-                      <Link href="">Mukul Remembrance</Link>
+                      <Link href="">Get Involved</Link>
                     </h4>
-                    <p>Honoring the legacy</p>
+                    {/* <p>Honoring the legacy</p> */}
                   </li>
                   <li>
                     <Link className="more_btn" href="">

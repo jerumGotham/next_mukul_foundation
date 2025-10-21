@@ -28,70 +28,65 @@ export default function EventsArea() {
 
   return (
     <>
-      <section className="events-area-02 pos-rel pb-100">
+      <section className="events-area-02 pos-rel">
         <div className="container-fluid pl-0 pr-0">
-          <div className="row no-gutters align-items-center">
+          <div className="row no-gutters ">
             <div className="col-xl-6 col-lg-6 col-md-12">
               <div
-                className="events_wrapper events-update pos-rel"
-                style={{
-                  backgroundImage: "url(/assets/img/added/5.jpg)",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
+                className="events-02 events-03 pos-abl mb-30 wow fadeInUp2 animated"
+                data-wow-delay=".4s"
               >
-                <div
-                  className="events-02 events-03 pos-abl mb-30 wow fadeInUp2 animated"
-                  data-wow-delay=".4s"
-                >
-                  <div className="video-area text-center">
-                    <a
-                      href="#"
-                      className="popup-video"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setVideoPopup(true);
-                      }}
-                    >
-                      <i className="fas fa-play"></i>
-                    </a>
-                  </div>
-                  <div className="cases events-update-content">
-                    <div className="cases__content">
-                      <div className="cases-progress mb-25">
-                        <p className="funding">
-                          Raised <span>$8420</span>
-                        </p>
-                        <div className="progress">
-                          <div
-                            className="progress-bar wow fadeInLeft animated"
-                            data-wow-delay="0.3s"
-                            role="progressbar"
-                            style={{ width: "75%" }}
-                            aria-valuenow={25}
-                            aria-valuemin={0}
-                            aria-valuemax={100}
-                          >
-                            <h5>95%</h5>
-                          </div>
+                <div className="video-area text-center">
+                  <iframe
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                    src="https://www.youtube.com/embed/St7ny38gLp4?si=SIeZqCir8oROVjZq&autoplay=1&mute=1"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="cases events-update-content">
+                  <div className="cases__content">
+                    <div className="cases-progress mb-25">
+                      <p className="funding">
+                        Raised <span>$8420</span>
+                      </p>
+                      <div className="progress">
+                        <div
+                          className="progress-bar wow fadeInLeft animated"
+                          data-wow-delay="0.3s"
+                          role="progressbar"
+                          style={{ width: "75%" }}
+                          aria-valuenow={25}
+                          aria-valuemin={0}
+                          aria-valuemax={100}
+                        >
+                          <h5>95%</h5>
                         </div>
                       </div>
-                      <h3 className="text-center">
-                        <Link href="/events-details">
-                          Urgent Help For Mineral Water For Homeless Peoples
-                        </Link>
-                      </h3>
-                      <p className="text-center">
-                        Sed perspiciat unde omnis iste natus error voluptatem
-                        accntiume
-                      </p>
                     </div>
+                    <h3 className="text-center">
+                      <Link href="/events-details">
+                        Urgent Help For Mineral Water For Homeless Peoples
+                      </Link>
+                    </h3>
+                    <p className="text-center">
+                      Sed perspiciat unde omnis iste natus error voluptatem
+                      accntiume
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 col-md-12">
-              <div className="helping-area theme-bg pt-50 pb-50 pl-70 pr-100">
+              <div className="helping-area theme-bg pt-20 pl-70 pr-100">
                 <div
                   className="section-title white-title text-left mb-50 wow fadeInUp2 animated"
                   data-wow-delay=".4s"

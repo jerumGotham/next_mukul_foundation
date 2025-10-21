@@ -61,8 +61,8 @@ export default function AboutArea() {
                 className="experience-box heding-bg wow fadeInUp2 animated"
                 data-wow-delay=".3s"
               >
-                <h1>25</h1>
-                <h4 className="semi-02-title">Years Experience</h4>
+                <h1>24</h1>
+                <h6 className="semi-02-title">Years Since 9/11 Attacks</h6>
               </div>
             </div>
           </div>
@@ -78,31 +78,33 @@ export default function AboutArea() {
                   </span>{" "}
                   About US
                 </h6>
-                <h2>Challenge 264 Million Children Go to Schools</h2>
+                <h2>Honoring Compassion, Service, and Religious Harmony</h2>
               </div>
               <p>
-                The Mukul Kumar Memorial Foundation is dedicated to creating
-                positive change and empowering communities through education,
-                healthcare, and sustainable development initiatives. Our mission
-                is to honor the legacy of Mukul Kumar by providing opportunities
-                and support to those who need it most, ensuring that every
-                individual has access to quality education and essential
-                resources for a better future
+                The Mukul Kumar Agarwala Memorial Scholarship honors the life of
+                Mukul Kumar Agarwala, whose compassion, humility, and selfless
+                service inspired all who knew him. Mukul overcame adversity and
+                discrimination with quiet strength, using his education and
+                success to uplift others—especially the marginalized and
+                voiceless. He dedicated his life to helping those in need,
+                supporting humanitarian causes, and promoting religious harmony
+                and understanding.
               </p>
               <ul
                 className="about_list mt-30 mb-20 wow fadeInUp2 animated"
                 data-wow-delay=".2s"
               >
                 <li>
-                  We believe in transparent and accountable use of resources to
-                  maximize impact and create lasting change in the communities
-                  we serve through education and development programs.
+                  This scholarship recognizes students who embody Mukul’s
+                  values: compassion, forgiveness, tolerance, and respect for
+                  all faiths.
                 </li>
                 <li>
-                  Our foundation works with dedicated volunteers and partners to
-                  implement sustainable solutions that address root causes and
-                  empower individuals to build better lives for themselves and
-                  their families.
+                  We invite applicants who have shown resilience in the face of
+                  hardship, who strive to serve others, and who seek to build
+                  bridges across divisions. Our foundation continues Mukul’s
+                  legacy by supporting those who make the world gentler, more
+                  just, and united in spirit.
                 </li>
               </ul>
               <Link className="theme_btn theme_btn_bg" href="">

@@ -15,7 +15,7 @@
       preloader.classList.add("fade-out");
       setTimeout(() => {
         preloader.style.display = "none";
-      }, 1600); // Slightly more than transition duration
+      }, 5600); // Slightly more than transition duration
     }, 500); // Wait before fading out (optional)
   });
 

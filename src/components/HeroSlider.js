@@ -146,6 +146,111 @@ export default function HeroSlider() {
         {/* Slide 1 */}
         <div
           className="single-slider slider-height pos-rel d-flex align-items-center"
+          style={{
+            background: "#000", // fallback background
+            padding: 0,
+            margin: 0,
+            minHeight: "600px", // or your preferred minimum height
+            height: "100%",
+          }}
+        >
+          <div className="container-fluid" style={{ padding: 0, margin: 0 }}>
+            <div className="row" style={{ margin: 0 }}>
+              <div className="col-12" style={{ padding: 0 }}>
+                {/* Responsive Video Embed */}
+                <div
+                  style={{
+                    position: "relative",
+                    width: "100%",
+                    height: "70vh", // or "100vh" for full viewport, or adjust as needed
+                    minHeight: "400px",
+                  }}
+                >
+                  <iframe
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                    src="https://www.youtube.com/embed/lIp7z5VraG4?autoplay=1&mute=1&si=KRNZvonU8tPkjYrr"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  ></iframe>
+                  {/* <iframe
+                    src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&controls=1&rel=0&showinfo=0&modestbranding=1&loop=1&playlist=VIDEO_ID"
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                    title="9/11 Tribute"
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  ></iframe> */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Slide 2 */}
+        {/* <div
+          className="single-slider slider-height pos-rel d-flex align-items-center"
+          style={{ backgroundImage: "url(assets/img/added/twintower_d.jpg)" }}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-7">
+                <div className="slider__content text-left">
+                  <h5
+                    className="sub-title mb-25"
+                    data-animation="fadeInUp2"
+                    data-delay=".1s"
+                  >
+                    <span className="pr-10">
+                      <i className="fas fa-heart"></i>
+                    </span>
+                    Raising Your Helping Hands
+                  </h5>
+                  <h1
+                    className="main-title mb-35"
+                    data-animation="fadeInUp2"
+                    data-delay=".2s"
+                  >
+                    Mukul&apos;s name, a lasting flame
+                  </h1>
+                  <ul
+                    className="btn-list"
+                    data-animation="fadeInUp2"
+                    data-delay=".3s"
+                  >
+                    <li>
+                      <Link href="" className="theme_btn theme_btn_bg">
+                        Learn more{" "}
+                        <span>
+                          <i className="fas fa-heart"></i>
+                        </span>
+                      </Link>
+                    </li>
+                   
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
+
+        {/* Slide 3 */}
+        {/* <div
+          className="single-slider slider-height pos-rel d-flex align-items-center"
           style={{ backgroundImage: "url(assets/img/added/2.jpg)" }}
         >
           <div className="container">
@@ -165,63 +270,6 @@ export default function HeroSlider() {
                   <h1
                     className="main-title mb-35"
                     data-animation="fadeInUp2"
-                    data-delay=".1s"
-                  >
-                    Mukul&apos;s name, a lasting flame
-                  </h1>
-                  <ul
-                    className="btn-list"
-                    data-animation="fadeInUp2"
-                    data-delay=".3s"
-                  >
-                    <li>
-                      <Link href="" className="theme_btn theme_btn_bg">
-                        Learn more{" "}
-                        <span>
-                          <i className="fas fa-heart"></i>
-                        </span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href=""
-                        className="theme_btn theme_btn2 theme_btn_bg_02"
-                      >
-                        our cases{" "}
-                        <span>
-                          <i className="fas fa-heart"></i>
-                        </span>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Slide 2 */}
-        <div
-          className="single-slider slider-height pos-rel d-flex align-items-center"
-          style={{ backgroundImage: "url(assets/img/slider/slider_new_1.jpg)" }}
-        >
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-7">
-                <div className="slider__content text-left">
-                  <h5
-                    className="sub-title mb-25"
-                    data-animation="fadeInUp2"
-                    data-delay=".1s"
-                  >
-                    <span className="pr-10">
-                      <i className="fas fa-heart"></i>
-                    </span>
-                    Raising Your Helping Hands
-                  </h5>
-                  <h1
-                    className="main-title mb-35"
-                    data-animation="fadeInUp2"
                     data-delay=".2s"
                   >
                     Mukul&apos;s name, a lasting flame
@@ -239,80 +287,13 @@ export default function HeroSlider() {
                         </span>
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        href=""
-                        className="theme_btn theme_btn2 theme_btn_bg_02"
-                      >
-                        our cases{" "}
-                        <span>
-                          <i className="fas fa-heart"></i>
-                        </span>
-                      </Link>
-                    </li>
+                   
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Slide 3 */}
-        <div
-          className="single-slider slider-height pos-rel d-flex align-items-center"
-          style={{ backgroundImage: "url(assets/img/added/9.jpg)" }}
-        >
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-7">
-                <div className="slider__content text-left">
-                  <h5
-                    className="sub-title mb-25"
-                    data-animation="fadeInUp2"
-                    data-delay=".1s"
-                  >
-                    <span className="pr-10">
-                      <i className="fas fa-heart"></i>
-                    </span>
-                    Raising Your Helping Hands
-                  </h5>
-                  <h1
-                    className="main-title mb-35"
-                    data-animation="fadeInUp2"
-                    data-delay=".2s"
-                  >
-                    Mukul&apos;s name, a lasting flame
-                  </h1>
-                  <ul
-                    className="btn-list"
-                    data-animation="fadeInUp2"
-                    data-delay=".3s"
-                  >
-                    <li>
-                      <Link href="" className="theme_btn theme_btn_bg">
-                        Learn more{" "}
-                        <span>
-                          <i className="fas fa-heart"></i>
-                        </span>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href=""
-                        className="theme_btn theme_btn2 theme_btn_bg_02"
-                      >
-                        our cases{" "}
-                        <span>
-                          <i className="fas fa-heart"></i>
-                        </span>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

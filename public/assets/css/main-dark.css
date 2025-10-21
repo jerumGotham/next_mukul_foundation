@@ -1,0 +1,220 @@
+/*----------------------------------------*/
+/*  Dark Mode CSS for Fande Template
+/*  Main color stays: #7d2805
+/*----------------------------------------*/
+
+/* Set root background and text color */
+body {
+  background: #061738;
+  color: #eee;
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+
+/* Links and Buttons */
+a,
+.button {
+  color: #eee;
+  transition: all 0.3s ease-out 0s;
+}
+a:hover,
+.button:hover {
+  color: #7d2805;
+}
+
+/* Main Accent Color */
+.theme-color,
+.theme_btn,
+.theme_btn span,
+.theme_btn span i,
+.theme_btn::before {
+  background: #7d2805 !important;
+  color: #fff !important;
+  border-color: #7d2805 !important;
+}
+
+/* Backgrounds */
+.white-bg,
+.grey-bg2,
+.black-bg2,
+.heding-bg {
+  background: #061738 !important;
+}
+.grey-bg {
+  background: #232323 !important;
+}
+.black-bg {
+  background: #061738 !important;
+}
+.theme-bg,
+.theme-bg2 {
+  background: #7d2805 !important;
+}
+
+/* Borders & Lines */
+hr,
+.theme-border-btn {
+  border-color: #393939;
+}
+label {
+  color: #bbb;
+}
+
+/* Inputs and forms */
+input,
+textarea,
+select,
+.form-control {
+  background: #232323;
+  color: #eee;
+  border: 1px solid #393939;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #aaa !important;
+}
+
+/* Section Titles */
+.section-title h6,
+.section-title h2,
+.semi-02-title,
+.white-title h6,
+.white-title h2 {
+  color: #fff !important;
+}
+
+/* Cards, Boxes, Overlays */
+.card,
+.card .card-header,
+.card .card-body,
+.statistics,
+.statistics-box__icon,
+.team,
+.features,
+.features-02,
+.gallery__thumb,
+.blog__thumb,
+.footer__widget,
+.copy-right-area .copyright {
+  background: #222 !important;
+  color: #eee !important;
+  border-color: #393939 !important;
+}
+
+[data-overlay="light"]::before {
+  background-color: #232323 !important;
+}
+
+/* Preloader and Scroll Up */
+/* #preloader {
+  background: #061738 !important;
+} */
+#scrollUp {
+  background: #7d2805 !important;
+  color: #fff !important;
+}
+
+/* Menu */
+.main-header-area,
+.main-menu,
+.sticky,
+.mobile-menu,
+.side-mobile-menu,
+.slide-bar,
+.offset-sidebar {
+  background: #061738 !important;
+}
+.main-menu ul li > a,
+.mobile-menu ul li > a {
+  color: #eee !important;
+}
+.main-menu ul li > a:hover,
+.main-menu ul li > a.active,
+.mobile-menu ul li > a.active {
+  color: #7d2805 !important;
+}
+
+/* Footer */
+.footer-area,
+.footer__widget,
+.copy-right-area .copyright {
+  background: #061738 !important;
+  color: #eee !important;
+}
+
+/* Breadcrumb, Page-title, Sections */
+.page-title-area,
+.page-title-area::before,
+.breadcrumb-list li a,
+.section-title h2,
+.cta-wrapper,
+.cta-top-area .cta-wrapper,
+.cta-top-area .cta-wrapper::before {
+  background: #232323 !important;
+  color: #fff !important;
+}
+
+/* Blog, Testimonial, Event, Gallery, etc. */
+.blog__content,
+.testimonial-item,
+.events__content,
+.gallery__content {
+  background: #232323 !important;
+  color: #fff !important;
+}
+
+/* Adjust accent elements */
+.theme_btn:hover,
+.theme_btn:focus,
+.theme_btn_bg::before,
+.theme_btn_bg_02::before {
+  background: #fff !important;
+  color: #7d2805 !important;
+}
+
+/* Remove/Adjust remaining light backgrounds */
+.white-bg,
+.blogs-02,
+.features-02,
+.card,
+.form-control,
+.popup-video,
+.nav-search.search-trigger.header-2-icon {
+  background: #232323 !important;
+  color: #fff !important;
+}
+
+/* Gallery hover overlay */
+.gallery__thumb::before,
+.gallery-02 .gallery__thumb::before {
+  background: #7d2805 !important;
+  opacity: 0.8 !important;
+}
+
+::-webkit-scrollbar {
+  background: #222;
+  color: #7d2805;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7d2805;
+}
+
+::-moz-selection,
+::selection {
+  background: #7d2805;
+  color: #fff;
+}

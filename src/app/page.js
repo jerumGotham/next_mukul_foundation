@@ -34,7 +34,7 @@ export default function Home() {
       <AboutArea />
 
       {/* Features Area */}
-      <FeaturesArea />
+      {/* <FeaturesArea /> */}
 
       {/* Events Area */}
       <EventsArea />

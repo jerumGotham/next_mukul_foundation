@@ -145,14 +145,14 @@ export default function Navigation() {
   return (
     <>
       <header id="top-menu" suppressHydrationWarning={true}>
-        <div className="header-top-area pos-rel pt-10 pb-15 d-none d-lg-block">
+        {/* <div className="header-top-area pos-rel pt-10 pb-15 d-none d-lg-block">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-xl-6 offset-xl-2 col-lg-7 text-right">
                 <div className="top-cta">
                   <p>
                     Welcome To &nbsp;
-                    <span className="text-[#b7860f] font-weight-bold">
+                    <span className="text-[#7d2805] font-weight-bold">
                       MUKUL KUMAR MEMORIAL FOUNDATION
                     </span>
                   </p>
@@ -186,56 +186,85 @@ export default function Navigation() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className={`main-header-area ${isSticky ? "sticky" : ""}`}>
           <div className="container">
             <div className="row align-items-center justify-content-between">
               <div
-                className="col-xl-5 col-lg-5 col-md-6 col-6 d-flex"
+                className="col-xl-3 col-lg-3 col-md-6 col-6 d-flex"
                 style={{
                   maxWidth: "clamp(922px, 90.38vw, 1720px)",
                   width: "100%",
                 }}
               >
                 <div className="logo-container d-flex gap-5">
-                  <div className="d-inline-block font-weight-bold text-[#b7860f]">
+                  <Image
+                    src="/assets/img/added/logo-removebg-preview.png"
+                    alt="Mukul Kumar Foundation Logo"
+                    width={50}
+                    height={50}
+                  />
+                  <Link href="/" className="d-inline-block align-self-center">
                     MUKUL KUMAR
-                  </div>
+                  </Link>
                 </div>
               </div>
 
-              <div className="col-xl-4 col-lg-4 d-none d-lg-block text-lg-center text-xl-right">
+              <div className="col-xl-7 col-lg-7 d-none d-lg-block text-lg-center text-xl-right">
                 <div className="main-menu d-none d-lg-block">
                   <nav>
                     <ul>
                       <li>
-                        <Link className="active" href="/">
+                        <Link
+                          className="active uppercase font-weight-bold"
+                          href="/"
+                        >
                           Home
                         </Link>
                       </li>
                       <li>
-                        <Link href="/about">
-                          About Us <i className="far fa-chevron-down"></i>
+                        <Link
+                          className="uppercase font-weight-bold"
+                          href="/about"
+                        >
+                          Our Story <i className="far fa-chevron-down"></i>
                         </Link>
                         <ul className="submenu">
                           <li>
-                            <Link href="/case-study-1">Mission</Link>
+                            <Link href="/case-study-1" className="uppercase">
+                              Mission
+                            </Link>
                           </li>
                           <li>
-                            <Link href="/case-study-2">Vision</Link>
+                            <Link href="/case-study-2" className="uppercase">
+                              Vision
+                            </Link>
                           </li>
                         </ul>
                       </li>
 
                       <li>
-                        <Link href="/contact">Contact</Link>
+                        <Link
+                          className="uppercase font-weight-bold"
+                          href="/students"
+                        >
+                          Scholarships
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className="uppercase font-weight-bold"
+                          href="/contact"
+                        >
+                          Partners | Contact
+                        </Link>
                       </li>
                     </ul>
                   </nav>
                 </div>
               </div>
 
-              <div className="col-xl-3 col-lg-3 col-md-6 col-6 text-right">
+              <div className="col-xl-2 col-lg-2 col-md-6 col-6 text-right">
                 <div className="hamburger-menu d-md-block d-lg-none">
                   <button
                     type="button"
@@ -253,9 +282,9 @@ export default function Navigation() {
                 </div>
                 <div className="quote-btn d-none d-lg-block">
                   <Link href="/donation" className="theme_btn theme_btn_bg">
-                    donate Now{" "}
+                    donate{" "}
                     <span>
-                      <i className="fas fa-heart"></i>
+                      <i className="fas fa-hand-holding-heart"></i>
                     </span>
                   </Link>
                 </div>
@@ -300,7 +329,7 @@ export default function Navigation() {
                   <ul>
                     <li>
                       <Link
-                        className="active"
+                        className="active uppercase font-weight-bold"
                         href="/"
                         onClick={handleMenuClose}
                       >
@@ -312,8 +341,12 @@ export default function Navigation() {
                         isSubmenuOpen ? "submenu-open" : ""
                       }`}
                     >
-                      <Link href="#" onClick={handleSubmenuToggle}>
-                        About Us <i className="far fa-chevron-down"></i>
+                      <Link
+                        href="#"
+                        className="uppercase font-weight-bold"
+                        onClick={handleSubmenuToggle}
+                      >
+                        Our Story <i className="far fa-chevron-down"></i>
                       </Link>
                       <ul
                         className="submenu"
@@ -332,8 +365,21 @@ export default function Navigation() {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/contact" onClick={handleMenuClose}>
-                        Contact
+                      <Link
+                        className="uppercase font-weight-bold"
+                        href="/students"
+                        onClick={handleMenuClose}
+                      >
+                        Scholarships
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="uppercase font-weight-bold"
+                        href="/contact"
+                        onClick={handleMenuClose}
+                      >
+                        Partners | Contact
                       </Link>
                     </li>
                   </ul>
@@ -345,17 +391,15 @@ export default function Navigation() {
               <div className="info-widget info-widget2">
                 <h4 className="offset-title mb-20">Contact Info</h4>
                 <p>
-                  <i className="fal fa-address-book"></i> 23/A, Miranda City
+                  <i className="fal fa-map-marker-alt"></i> 23/A, Miranda City
                   Likaoli Prikano, Dope
                 </p>
                 <p>
-                  <i className="fal fa-phone"></i> +0989 7876 9865 9
+                  <i className="fal fa-phone"></i> +0989 7876 9865
                 </p>
                 <p>
                   <i className="fal fa-envelope-open"></i>
-                  <a href="mailto:info@mukulkumarfoundation.org">
-                    info@mukulkumarfoundation.org
-                  </a>
+                  <a href="mailto:info@mkmf.org">info@mkmf.org</a>
                 </p>
               </div>
             </div>
