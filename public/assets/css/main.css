@@ -466,16 +466,16 @@ section-title
 .section-title h2 span {
   font-weight: 300;
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/* @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .section-title h2 {
     font-size: 40px;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+} */
+/* @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-title h2 {
     font-size: 45px;
   }
-}
+} */
 @media (max-width: 767px) {
   .section-title h2 {
     font-size: 25px;
@@ -5875,22 +5875,38 @@ input.main-search-input:-ms-input-placeholder {
   .helping-area {
     padding-left: 25px;
     padding-right: 25px;
+    padding-top: 73px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .helping-area {
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 50px;
-    padding-bottom: 106px;
+    padding-top: 73px;
+    padding-bottom: 0px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 849px) and (max-width: 991px) {
+  .helping-area {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 51px;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 849px) {
+  .helping-area {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 18px;
+  }
+}
+/* @media only screen and (min-width: 849px) and (max-width: 991px) {
   .helping-area {
     padding-left: 25px;
     padding-right: 25px;
   }
-}
+} */
 @media (max-width: 767px) {
   .helping-area {
     padding-left: 25px;
@@ -7973,4 +7989,74 @@ input.main-search-input:-ms-input-placeholder {
   top: 100%;
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 767px) {
+  /* Stack columns vertically */
+  .events-area-02 .row.no-gutters {
+    flex-direction: column !important;
+  }
+  .events-area-02 .col-xl-6,
+  .events-area-02 .col-lg-6,
+  .events-area-02 .col-md-12 {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  /* Video area and iframe */
+  .events-02.events-03 {
+    position: static !important;
+    min-height: 220px;
+    margin-bottom: 0 !important;
+  }
+  .events-02 .video-area,
+  .events-02 .video-area iframe {
+    position: static !important;
+    width: 100% !important;
+    height: 200px !important;
+    min-height: 200px;
+    display: block;
+  }
+  /* Fix progress bar and content padding */
+  .cases__content {
+    padding: 0 10px 15px 10px !important;
+  }
+  .cases-progress .progress {
+    height: 8px !important;
+  }
+  .cases-progress .progress-bar h5 {
+    font-size: 14px !important;
+    top: -25px !important;
+    right: 0 !important;
+  }
+  .cases-progress .funding {
+    font-size: 14px !important;
+    margin-bottom: 3px !important;
+  }
+
+  /* Main headline and description */
+  .cases__content h3 {
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+    text-align: center !important;
+  }
+  .cases__content p {
+    font-size: 14px !important;
+    text-align: center !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* Prevent overflow */
+  .events-area-02,
+  .events-02,
+  .events-03,
+  .video-area,
+  .cases,
+  .cases__content {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
 }

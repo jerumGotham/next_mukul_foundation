@@ -31,7 +31,7 @@ export default function EventsArea() {
       <section className="events-area-02 pos-rel">
         <div className="container-fluid pl-0 pr-0">
           <div className="row no-gutters ">
-            <div className="col-xl-6 col-lg-6 col-md-12">
+            <div className="col-xl-6 col-lg-6 col-md-6">
               <div
                 className="events-02 events-03 pos-abl mb-30 wow fadeInUp2 animated"
                 data-wow-delay=".4s"
@@ -77,15 +77,15 @@ export default function EventsArea() {
                         Urgent Help For Mineral Water For Homeless Peoples
                       </Link>
                     </h3>
-                    <p className="text-center">
+                    {/* <p className="text-center">
                       Sed perspiciat unde omnis iste natus error voluptatem
                       accntiume
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-6 col-md-12">
+            <div className="col-xl-6 col-lg-6 col-md-6">
               <div className="helping-area theme-bg pt-20 pl-70 pr-100">
                 <div
                   className="section-title white-title text-left mb-50 wow fadeInUp2 animated"

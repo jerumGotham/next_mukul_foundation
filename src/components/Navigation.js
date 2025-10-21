@@ -214,14 +214,14 @@ export default function Navigation() {
                 <div className="main-menu d-none d-lg-block">
                   <nav>
                     <ul>
-                      <li>
+                      {/* <li>
                         <Link
                           className="active uppercase font-weight-bold"
                           href="/"
                         >
                           Home
                         </Link>
-                      </li>
+                      </li> */}
                       <li>
                         <Link
                           className="uppercase font-weight-bold"
@@ -327,7 +327,7 @@ export default function Navigation() {
               <div className="mobile-menu">
                 <nav>
                   <ul>
-                    <li>
+                    {/* <li>
                       <Link
                         className="active uppercase font-weight-bold"
                         href="/"
@@ -335,14 +335,14 @@ export default function Navigation() {
                       >
                         Home
                       </Link>
-                    </li>
+                    </li> */}
                     <li
                       className={`has-dropdown ${
                         isSubmenuOpen ? "submenu-open" : ""
                       }`}
                     >
                       <Link
-                        href="#"
+                        href="/about"
                         className="uppercase font-weight-bold"
                         onClick={handleSubmenuToggle}
                       >

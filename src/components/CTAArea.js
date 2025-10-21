@@ -115,7 +115,7 @@ export default function CTAArea() {
               <button className="theme_btn theme_btn_bg">
                 Donate now{" "}
                 <span>
-                  <i className="fas fa-heart"></i>
+                  <i className="fas fa-hand-holding-heart"></i>
                 </span>
               </button>
             </div>
