@@ -204,7 +204,10 @@ export default function Navigation() {
                     width={50}
                     height={50}
                   />
-                  <Link href="/" className="d-inline-block align-self-center">
+                  <Link
+                    href="/"
+                    className="d-inline-block align-self-center font-weight-bold "
+                  >
                     MUKUL KUMAR
                   </Link>
                 </div>
@@ -318,7 +321,7 @@ export default function Navigation() {
 
           {/* offset-sidebar start */}
           <div className="offset-sidebar">
-            <div className="offset-widget offset-logo mb-30">
+            <div className="offset-widget offset-logo mb-30 font-weight-bold ">
               <Link href="/">MUKUL KAMAR FOUNDATION</Link>
             </div>
 
