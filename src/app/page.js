@@ -49,7 +49,7 @@ export default function Home() {
       <TestimonialArea />
 
       {/* Volunteer Area */}
-      <Volunteer />
+      {/* <Volunteer /> */}
 
       {/* Brand Area */}
       <Brand />

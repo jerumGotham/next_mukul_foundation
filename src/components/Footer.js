@@ -43,7 +43,7 @@ export default function Footer() {
               <div className="footer-total-raised">
                 <h4
                   style={{
-                    color: "#061738",
+                    color: "#8B0000",
                     fontSize: "22px",
                     fontWeight: "600",
                     marginBottom: "15px",
@@ -53,7 +53,7 @@ export default function Footer() {
                 </h4>
                 <h2
                   style={{
-                    color: "#7d2805",
+                    color: "#b6850b",
                     fontSize: "48px",
                     fontWeight: "700",
                   }}
@@ -73,7 +73,7 @@ export default function Footer() {
                   fontSize: "28px",
                   fontWeight: "700",
                   marginBottom: "30px",
-                  color: "#061738",
+                  color: "#8B0000",
                   position: "relative",
                   paddingBottom: "15px",
                 }}
@@ -83,7 +83,7 @@ export default function Footer() {
                     display: "inline-block",
                     width: "60px",
                     height: "3px",
-                    background: "#7d2805",
+                    background: "#b6850b",
                     marginRight: "15px",
                     verticalAlign: "middle",
                   }}
@@ -184,7 +184,7 @@ export default function Footer() {
                   fontSize: "28px",
                   fontWeight: "700",
                   marginBottom: "30px",
-                  color: "#061738",
+                  color: "#8B0000",
                   position: "relative",
                   paddingBottom: "15px",
                 }}
@@ -194,7 +194,7 @@ export default function Footer() {
                     display: "inline-block",
                     width: "60px",
                     height: "3px",
-                    background: "#7d2805",
+                    background: "#b6850b",
                     marginRight: "15px",
                     verticalAlign: "middle",
                   }}
@@ -216,7 +216,7 @@ export default function Footer() {
                           textDecoration: "none",
                           transition: "color 0.3s ease",
                         }}
-                        onMouseEnter={(e) => (e.target.style.color = "#7d2805")}
+                        onMouseEnter={(e) => (e.target.style.color = "#b6850b")}
                         onMouseLeave={(e) => (e.target.style.color = "#666")}
                       >
                         About Us
@@ -238,7 +238,7 @@ export default function Footer() {
                           textDecoration: "none",
                           transition: "color 0.3s ease",
                         }}
-                        onMouseEnter={(e) => (e.target.style.color = "#7d2805")}
+                        onMouseEnter={(e) => (e.target.style.color = "#b6850b")}
                         onMouseLeave={(e) => (e.target.style.color = "#666")}
                       >
                         Become Volunteer
@@ -265,7 +265,7 @@ export default function Footer() {
             width: "60px",
             height: "60px",
             borderRadius: "50%",
-            background: "#7d2805",
+            background: "#b6850b",
             border: "none",
             color: "white",
             fontSize: "24px",
@@ -277,11 +277,11 @@ export default function Footer() {
             transition: "all 0.3s ease",
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.background = "#061738";
+            e.currentTarget.style.background = "#8B0000";
             e.currentTarget.style.transform = "translateX(50%) scale(1.1)";
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.background = "#061738";
+            e.currentTarget.style.background = "#8B0000";
             e.currentTarget.style.transform = "translateX(50%) scale(1)";
           }}
         >
@@ -293,7 +293,7 @@ export default function Footer() {
       <div
         className="footer-bottom"
         style={{
-          background: "#061738",
+          background: "#8B0000",
           position: "relative",
           overflow: "hidden",
         }}
@@ -324,13 +324,13 @@ export default function Footer() {
               >
                 <p>
                   © 2025{" "}
-                  <span style={{ color: "#7d2805", fontWeight: "600" }}>
+                  <span style={{ color: "#b6850b", fontWeight: "600" }}>
                     Mukul Kumar Memorial Foundation
                   </span>
                   . Made with{" "}
                   <i
                     className="fas fa-heart"
-                    style={{ color: "#7d2805", margin: "0 5px" }}
+                    style={{ color: "#b6850b", margin: "0 5px" }}
                   ></i>
                 </p>
               </div>

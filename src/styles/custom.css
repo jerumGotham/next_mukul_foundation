@@ -45,3 +45,118 @@
  * You can also import external CSS files here:
  * @import url('path-to-your-external-css-file.css');
  */
+
+/* Change dark blue backgrounds to dark red */
+.theme-bg,
+.header-area,
+.main-header-area,
+.footer-area,
+.helping-area {
+  background-color: #8b0000 !important; /* Dark red instead of dark blue */
+}
+
+/* Change all red colors to yellow (logo color) */
+.theme_btn_bg,
+.theme_btn:hover,
+.progress-bar,
+.testimonial-arrow,
+.testimonial-dots button.active,
+.donate-select-02 {
+  background-color: #fdb913 !important; /* Yellow like logo */
+}
+
+/* Change red text to yellow */
+.theme-color,
+.section-title h6 span,
+a:hover {
+  color: #fdb913 !important;
+}
+
+/* Change red borders to yellow */
+.theme-border,
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #fdb913 !important;
+}
+
+/* Change CTA Area (Donate Now) background to dark blue */
+.donation-area-03,
+section.about-area-03.pos-rel.pt-20.pb-75 {
+  background-color: #8b0000 !important; /* Dark blue like header */
+}
+
+.doante-select-area.donate-select-02 {
+  background-color: #8b0000 !important;
+  border: 2px solid #fdb913;
+}
+
+/* Change gray squares to yellow */
+.cont_btn {
+  background-color: #fdb913 !important;
+  color: #8b0000 !important;
+  border: 2px solid #fdb913 !important;
+}
+
+.cont_btn:hover {
+  background-color: #8b0000 !important;
+  color: #fdb913 !important;
+  border: 2px solid #fdb913 !important;
+}
+
+/* Update donation box styling */
+.doante-select-area h2,
+.doante-select-area p {
+  color: #ffffff !important;
+}
+
+/* Chart circles to yellow */
+.chart {
+  border-color: #fdb913 !important;
+}
+
+/* Brand slider backgrounds */
+.brand-slide:hover {
+  background-color: rgba(253, 185, 19, 0.1) !important;
+}
+
+/* Navigation hover states */
+.main-menu ul li:hover > a {
+  color: #fdb913 !important;
+}
+
+/* Buttons and CTAs */
+.theme_btn_bg_02:hover {
+  background-color: #fdb913 !important;
+  border-color: #fdb913 !important;
+}
+
+/* Footer updates */
+.copy-right-area .copyright p span {
+  color: #fdb913 !important;
+}
+
+/* Modal updates */
+.modal-header {
+  background: linear-gradient(135deg, #8b0000 0%, #b22222 100%) !important;
+}
+
+.modal-content input:focus,
+.modal-content select:focus,
+.modal-content textarea:focus {
+  border-color: #fdb913 !important;
+}
+
+.modal-submit-btn {
+  background: linear-gradient(135deg, #fdb913 0%, #ffc94d 100%) !important;
+}
+
+/* Counter area updates */
+.counetrs__icon i {
+  color: #fdb913 !important;
+}
+
+/* Service cards hover */
+.services:hover {
+  border-color: #fdb913 !important;
+}

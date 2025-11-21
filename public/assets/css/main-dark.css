@@ -1,11 +1,11 @@
 /*----------------------------------------*/
 /*  Dark Mode CSS for Fande Template
-/*  Main color stays: #7d2805
+/*  Main color stays: #b6850b
 /*----------------------------------------*/
 
 /* Set root background and text color */
 body {
-  background: #061738;
+  background: #8b0000;
   color: #eee;
   font-family: "Karla", sans-serif;
   font-size: 15px;
@@ -32,7 +32,7 @@ a,
 }
 a:hover,
 .button:hover {
-  color: #7d2805;
+  color: #b6850b;
 }
 
 /* Main Accent Color */
@@ -41,9 +41,9 @@ a:hover,
 .theme_btn span,
 .theme_btn span i,
 .theme_btn::before {
-  background: #7d2805 !important;
+  background: #b6850b !important;
   color: #fff !important;
-  border-color: #7d2805 !important;
+  border-color: #b6850b !important;
 }
 
 /* Backgrounds */
@@ -51,17 +51,17 @@ a:hover,
 .grey-bg2,
 .black-bg2,
 .heding-bg {
-  background: #061738 !important;
+  background: #8b0000 !important;
 }
 .grey-bg {
   background: #232323 !important;
 }
 .black-bg {
-  background: #061738 !important;
+  background: #8b0000 !important;
 }
 .theme-bg,
 .theme-bg2 {
-  background: #7d2805 !important;
+  background: #b6850b !important;
 }
 
 /* Borders & Lines */
@@ -120,10 +120,10 @@ textarea::placeholder {
 
 /* Preloader and Scroll Up */
 /* #preloader {
-  background: #061738 !important;
+  background: #8B0000 !important;
 } */
 #scrollUp {
-  background: #7d2805 !important;
+  background: #b6850b !important;
   color: #fff !important;
 }
 
@@ -135,7 +135,7 @@ textarea::placeholder {
 .side-mobile-menu,
 .slide-bar,
 .offset-sidebar {
-  background: #061738 !important;
+  background: #8b0000 !important;
 }
 .main-menu ul li > a,
 .mobile-menu ul li > a {
@@ -144,14 +144,14 @@ textarea::placeholder {
 .main-menu ul li > a:hover,
 .main-menu ul li > a.active,
 .mobile-menu ul li > a.active {
-  color: #7d2805 !important;
+  color: #b6850b !important;
 }
 
 /* Footer */
 .footer-area,
 .footer__widget,
 .copy-right-area .copyright {
-  background: #061738 !important;
+  background: #8b0000 !important;
   color: #eee !important;
 }
 
@@ -182,7 +182,7 @@ textarea::placeholder {
 .theme_btn_bg::before,
 .theme_btn_bg_02::before {
   background: #fff !important;
-  color: #7d2805 !important;
+  color: #b6850b !important;
 }
 
 /* Remove/Adjust remaining light backgrounds */
@@ -200,21 +200,21 @@ textarea::placeholder {
 /* Gallery hover overlay */
 .gallery__thumb::before,
 .gallery-02 .gallery__thumb::before {
-  background: #7d2805 !important;
+  background: #b6850b !important;
   opacity: 0.8 !important;
 }
 
 ::-webkit-scrollbar {
   background: #222;
-  color: #7d2805;
+  color: #b6850b;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #7d2805;
+  background: #b6850b;
 }
 
 ::-moz-selection,
 ::selection {
-  background: #7d2805;
+  background: #b6850b;
   color: #fff;
 }

@@ -152,7 +152,7 @@ export default function Navigation() {
                 <div className="top-cta">
                   <p>
                     Welcome To &nbsp;
-                    <span className="text-[#7d2805] font-weight-bold">
+                    <span className="text-[#b6850b] font-weight-bold">
                       MUKUL KUMAR MEMORIAL FOUNDATION
                     </span>
                   </p>

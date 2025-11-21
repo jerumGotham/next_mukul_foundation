@@ -43,7 +43,7 @@ export default function CTAArea() {
                 className="section-title text-center mb-40 wow fadeInUp2 animated"
                 data-wow-delay=".1s"
               >
-                <h2>Donate Us</h2>
+                <h2>Donate Now</h2>
                 <p>
                   Sed perspiciatis unde omnis iste natus errvolu ptatem accntium
                   doloremque laudantiu aperiam

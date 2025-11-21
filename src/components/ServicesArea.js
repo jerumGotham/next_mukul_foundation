@@ -237,7 +237,7 @@ export default function ServicesArea() {
             {/* Modal Header */}
             <div
               style={{
-                background: "linear-gradient(135deg, #7d2805 0%, #a33607 100%)",
+                background: "linear-gradient(135deg, #b6850b 0%, #a33607 100%)",
                 padding: "30px",
                 borderRadius: "15px 15px 0 0",
                 color: "white",
@@ -300,7 +300,7 @@ export default function ServicesArea() {
                       fontSize: "14px",
                     }}
                   >
-                    Full Name <span style={{ color: "#7d2805" }}>*</span>
+                    Full Name <span style={{ color: "#b6850b" }}>*</span>
                   </label>
                   <input
                     type="text"
@@ -315,11 +315,11 @@ export default function ServicesArea() {
                       fontSize: "15px",
                       transition: "all 0.3s ease",
                       outline: "none",
-                      backgroundColor: "#061738",
+                      backgroundColor: "#8B0000",
                       color: "#000",
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = "#7d2805";
+                      e.target.style.borderColor = "#b6850b";
                       e.target.style.backgroundColor = "#2a2a2a";
                     }}
                     onBlur={(e) => {
@@ -341,7 +341,7 @@ export default function ServicesArea() {
                       fontSize: "14px",
                     }}
                   >
-                    Email Address <span style={{ color: "#7d2805" }}>*</span>
+                    Email Address <span style={{ color: "#b6850b" }}>*</span>
                   </label>
                   <input
                     type="email"
@@ -360,7 +360,7 @@ export default function ServicesArea() {
                       color: "#000",
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = "#7d2805";
+                      e.target.style.borderColor = "#b6850b";
                       e.target.style.backgroundColor = "#2a2a2a";
                     }}
                     onBlur={(e) => {
@@ -382,7 +382,7 @@ export default function ServicesArea() {
                       fontSize: "14px",
                     }}
                   >
-                    Phone Number <span style={{ color: "#7d2805" }}>*</span>
+                    Phone Number <span style={{ color: "#b6850b" }}>*</span>
                   </label>
                   <input
                     type="tel"
@@ -401,7 +401,7 @@ export default function ServicesArea() {
                       color: "#000",
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = "#7d2805";
+                      e.target.style.borderColor = "#b6850b";
                       e.target.style.backgroundColor = "#2a2a2a";
                     }}
                     onBlur={(e) => {
@@ -423,7 +423,7 @@ export default function ServicesArea() {
                       fontSize: "14px",
                     }}
                   >
-                    Date of Birth <span style={{ color: "#7d2805" }}>*</span>
+                    Date of Birth <span style={{ color: "#b6850b" }}>*</span>
                   </label>
                   <input
                     type="date"
@@ -442,7 +442,7 @@ export default function ServicesArea() {
                       color: "#000",
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = "#7d2805";
+                      e.target.style.borderColor = "#b6850b";
                       e.target.style.backgroundColor = "#2a2a2a";
                     }}
                     onBlur={(e) => {
@@ -463,7 +463,7 @@ export default function ServicesArea() {
                       fontSize: "14px",
                     }}
                   >
-                    Address <span style={{ color: "#7d2805" }}>*</span>
+                    Address <span style={{ color: "#b6850b" }}>*</span>
                   </label>
                   <input
                     type="text"
@@ -482,7 +482,7 @@ export default function ServicesArea() {
                       color: "#000",
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = "#7d2805";
+                      e.target.style.borderColor = "#b6850b";
                       e.target.style.backgroundColor = "#2a2a2a";
                     }}
                     onBlur={(e) => {
@@ -505,7 +505,7 @@ export default function ServicesArea() {
                     }}
                   >
                     Current Education Level{" "}
-                    <span style={{ color: "#7d2805" }}>*</span>
+                    <span style={{ color: "#b6850b" }}>*</span>
                   </label>
                   <select
                     name="education"
@@ -523,7 +523,7 @@ export default function ServicesArea() {
                       color: "#000",
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = "#7d2805";
+                      e.target.style.borderColor = "#b6850b";
                       e.target.style.backgroundColor = "#2a2a2a";
                     }}
                     onBlur={(e) => {
@@ -576,7 +576,7 @@ export default function ServicesArea() {
                     }}
                   >
                     Program/Field of Study{" "}
-                    <span style={{ color: "#7d2805" }}>*</span>
+                    <span style={{ color: "#b6850b" }}>*</span>
                   </label>
                   <input
                     type="text"
@@ -595,7 +595,7 @@ export default function ServicesArea() {
                       color: "#000",
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = "#7d2805";
+                      e.target.style.borderColor = "#b6850b";
                       e.target.style.backgroundColor = "#2a2a2a";
                     }}
                     onBlur={(e) => {
@@ -618,7 +618,7 @@ export default function ServicesArea() {
                     }}
                   >
                     Annual Family Income{" "}
-                    <span style={{ color: "#7d2805" }}>*</span>
+                    <span style={{ color: "#b6850b" }}>*</span>
                   </label>
                   <select
                     name="income"
@@ -636,7 +636,7 @@ export default function ServicesArea() {
                       color: "#000",
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = "#7d2805";
+                      e.target.style.borderColor = "#b6850b";
                       e.target.style.backgroundColor = "#2a2a2a";
                     }}
                     onBlur={(e) => {
@@ -683,7 +683,7 @@ export default function ServicesArea() {
                     }}
                   >
                     Why do you deserve this scholarship?{" "}
-                    <span style={{ color: "#7d2805" }}>*</span>
+                    <span style={{ color: "#b6850b" }}>*</span>
                   </label>
                   <textarea
                     name="message"
@@ -704,7 +704,7 @@ export default function ServicesArea() {
                       color: "#000",
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = "#7d2805";
+                      e.target.style.borderColor = "#b6850b";
                       e.target.style.backgroundColor = "#2a2a2a";
                     }}
                     onBlur={(e) => {
@@ -724,7 +724,7 @@ export default function ServicesArea() {
                     flex: 1,
                     padding: "15px 30px",
                     background:
-                      "linear-gradient(135deg, #7d2805 0%, #a33607 100%)",
+                      "linear-gradient(135deg, #b6850b 0%, #a33607 100%)",
                     color: "white",
                     border: "none",
                     borderRadius: "8px",
@@ -763,7 +763,7 @@ export default function ServicesArea() {
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.background = "#2a2a2a";
-                    e.currentTarget.style.borderColor = "#7d2805";
+                    e.currentTarget.style.borderColor = "#b6850b";
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background = "#000";

@@ -174,7 +174,7 @@ export default function TestimonialArea() {
               left: "-50px",
               top: "50%",
               transform: "translateY(-50%)",
-              background: "#7d2805",
+              background: "#b6850b",
               border: "none",
               borderRadius: "50%",
               width: "50px",
@@ -189,11 +189,11 @@ export default function TestimonialArea() {
               transition: "all 0.3s ease",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = "#7d2805";
+              e.currentTarget.style.background = "#b6850b";
               e.currentTarget.style.transform = "translateY(-50%) scale(1.1)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = "#7d2805";
+              e.currentTarget.style.background = "#b6850b";
               e.currentTarget.style.transform = "translateY(-50%) scale(1)";
             }}
           >
@@ -207,7 +207,7 @@ export default function TestimonialArea() {
               right: "-50px",
               top: "50%",
               transform: "translateY(-50%)",
-              background: "#7d2805",
+              background: "#b6850b",
               border: "none",
               borderRadius: "50%",
               width: "50px",
@@ -222,11 +222,11 @@ export default function TestimonialArea() {
               transition: "all 0.3s ease",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = "#7d2805";
+              e.currentTarget.style.background = "#b6850b";
               e.currentTarget.style.transform = "translateY(-50%) scale(1.1)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = "#7d2805";
+              e.currentTarget.style.background = "#b6850b";
               e.currentTarget.style.transform = "translateY(-50%) scale(1)";
             }}
           >
@@ -252,13 +252,13 @@ export default function TestimonialArea() {
                   height: "12px",
                   borderRadius: "50%",
                   border: "none",
-                  background: index === currentSlide ? "#7d2805" : "#ddd",
+                  background: index === currentSlide ? "#b6850b" : "#ddd",
                   cursor: "pointer",
                   transition: "all 0.3s ease",
                 }}
                 onMouseEnter={(e) => {
                   if (index !== currentSlide) {
-                    e.currentTarget.style.background = "#7d2805";
+                    e.currentTarget.style.background = "#b6850b";
                   }
                 }}
                 onMouseLeave={(e) => {
